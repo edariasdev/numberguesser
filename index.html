@@ -4,11 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Number-Guess</title>
 </head>
 
 <body>
-
+    <div class="container" style="text-align: center;">
+        <h1 id="apptitle" style="padding-top: 5em"></h1>
+        <div id="game">
+            <p>Guess a number between <span class="min-num"></span> and <span class="max-num"></span></p>
+            <div style="align-items: center;">
+                <input type="number" id="guess-input" placeholder="enter your number..">
+                <input type="submit" value="Submit" id="guess-btn">
+            </div>
+            <p class="message"></p>
+        </div>
+    </div>
+    <script src='app.js'></script>
 </body>
 
 </html>
